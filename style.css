@@ -1,0 +1,202 @@
+
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+
+#header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#socialButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#socialButtons a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#content {
+    
+    text-align: center;
+
+}
+#videoContainer {
+    display: flex;                
+  flex-direction: row;            
+  flex-wrap: nowrap;              
+  justify-content: space-between; 
+ margin-left: 25px;
+ margin-right: 25px;
+
+}
+
+#logoContainer{
+    
+    
+    vertical-align: top;
+  
+    
+    width: 150px;
+    height: 80px;
+
+}
+#wlcmsg{
+    display: flex;
+    width: 400px;
+    position: absolute;
+    right: 37%;
+    margin-right: 10px;
+
+}
+
+#logo {
+    position:absolute;;
+    top:-10%;
+    right:30.5%;
+    vertical-align: top;
+  
+    
+    width: 150px;
+    height: 150px;
+    margin-left: 10px; /* Add margin-left to create space between the logo and the text */
+    /* Add animation styles */
+    animation-name:spin;
+    animation-duration: 1.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#ctaButton {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#ctaButton:hover {
+    background-color: #990000;
+}
+#aboutSection {
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: -4px;
+
+text-align: center;
+
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 51%;
+    }
+}
+
+#aboutSection .typewriter {
+    overflow:hidden;
+    white-space: nowrap;
+    animation: typewriter 6s steps(100) 1s 1 normal both;
+    animation-iteration-count:infinite;
+    border-right: 2px solid #000;
+    padding-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5;
+}
+a{
+    font-weight: bold;
+    font-size: larger;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: x-large;
+}
+@media (max-width: 768px) {
+
+    @keyframes typewriter1 {
+        from {
+            width: 0;
+        }
+        to {
+            width: 98%;
+        }
+    }
+
+
+    #aboutSection .typewriter1 {
+        overflow:hidden;
+        white-space: nowrap;
+        animation: typewriter1 6s steps(100) 1s 1 normal both;
+        animation-iteration-count:infinite;
+        border-right: 2px solid #000;
+        padding-right: 5px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1.5;
+    }
+
+
+    #socialButtons {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+    }
+   
+    
+  
+    #socialButtons a {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    #content {
+      padding: 20px;
+    }
+  
+    #logo {
+        justify-content: space-between;
+       
+      width: 150px;
+      height: 150px;
+    }
+  
+    #ctaButton {
+      font-size: 16px;
+    }
+  }
